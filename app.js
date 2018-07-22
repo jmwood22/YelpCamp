@@ -15,9 +15,10 @@ var commentRoutes       = require("./routes/comments"),
     campgroundRoutes    = require("./routes/campgrounds"),
     indexRoutes          = require("./routes/index");
 
+mongoose.connect(process.env.DATABASEURL);
 
 //mongoose.connect("mongodb://localhost/yelp_camp");
-mongoose.connect("mongodb://jmwood22:Sabre1@ds145981.mlab.com:45981/yelpcamp_jwood")
+//mongoose.connect("mongodb://jmwood22:Sabre1@ds145981.mlab.com:45981/yelpcamp_jwood")
 //seedDB();
 
 app.use(flash());
